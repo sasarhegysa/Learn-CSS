@@ -1,0 +1,115 @@
+/* Mobile-First Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+/* Navigation Styling */
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #444;
+}
+
+.nav ul li {
+    display: inline;
+}
+
+.nav ul li a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.section-a, .section-b, .section-c, .section-d {
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+}
+
+.section-a {
+    background-color: #f1f1f1;
+}
+
+.section-b {
+    background-color: #d9d9d9;
+}
+
+.section-c {
+    background-color: #c1c1c1;
+}
+
+.section-d {
+    background-color: #a9a9a9;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Flexbox for larger screens */
+@media (min-width: 600px) {
+    .main-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .section-a, .section-b, .section-c, .section-d {
+        flex: 1 1 calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+/* Grid Layout for even larger screens */
+@media (min-width: 900px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .section-a, .section-b, .section-c, .section-d {
+        flex: 1 1 auto; /* Reset flex properties */
+        grid-column: span 1; /* Default to spanning 1 column */
+    }
+
+    .section-a {
+        grid-column: span 2; /* Span across two columns */
+    }
+}
