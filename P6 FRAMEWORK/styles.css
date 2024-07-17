@@ -1,0 +1,45 @@
+/* Custom styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+    min-height: 400px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.hero .btn {
+    margin-top: 20px;
+}
+
+/* Features Section */
+.features .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.features .card:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials .blockquote-footer {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+}
